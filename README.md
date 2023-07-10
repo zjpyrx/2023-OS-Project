@@ -13,6 +13,8 @@
 1. 实验目的
 1. ![1](1.Lab-Xv6and Unix utilities/assets/1.png)
 
+3. ![image-20230710164809630](assets/image-20230710164809630.png)
+
 ### sleep (easy)
 
 ### pingpong (easy)
