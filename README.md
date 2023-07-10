@@ -11,6 +11,7 @@
 ### Boot xv6 (easy)
 
 1. 实验目的
+1. ![1](1.Lab-Xv6and Unix utilities/assets/1.png)
 
 ### sleep (easy)
 
