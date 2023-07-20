@@ -2,15 +2,16 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
-int main(int argc, char* argv[])
+int
+main(int argc, char* argv[])
 {
-    if (argc == 1)
-    {
-        printf("sleep need one argument\n");
-        exit(1);
+
+    if (argc != 2) {
+        fprintf(2, "Usage: sleep times\n");
     }
-    uint ticks = atoi(argv[1]);
-    sleep(ticks);
-    printf("(nothing happens for a little while)");
+    int time = atoi(*++argv);
+    if (sleep(time) != 0) {
+        fprintf(2, "Error in sleep sys_call!\n");
+    }
     exit(0);
 }
